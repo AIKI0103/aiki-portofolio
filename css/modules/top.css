@@ -1,54 +1,4 @@
 @charset "UTF-8";
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  padding-top: 80px;
-}
-
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
-  background-color: white;
-}
-#header h1 {
-  margin: 0;
-  font-size: 20px;
-  letter-spacing: 4px;
-}
-#header .nav-top {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-#header .nav-top li {
-  list-style: none;
-}
-#header .nav-top .sns-icon {
-  display: inline-block;
-  color: #7d7d7d;
-  font-size: 30px;
-  transition: transform 0.3s, color 0.3s;
-}
-#header .nav-top .sns-icon:hover {
-  transform: scale(1.2);
-  color: #555;
-}
-
 .top {
   font-family: "Domine", serif;
   color: #fff;
@@ -138,24 +88,4 @@ main {
 }
 .foot-menu .sns-icon {
   font-size: 20px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: A1ゴシック R JIS2004;
-  color: #333;
-  background-color: #fff;
-}
-
-a,
-li,
-ul {
-  list-style: none;
-  text-decoration: none;
-  color: #fff;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=top.css.map */

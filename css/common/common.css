@@ -1,1 +1,20 @@
-/*# sourceMappingURL=common.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: A1ゴシック R JIS2004;
+  color: #333;
+  background-color: #fff;
+}
+
+a,
+li,
+ul {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=common.css.map */
