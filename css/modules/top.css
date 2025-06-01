@@ -44,6 +44,10 @@
   position: absolute;
   top: 0;
   left: 0;
+  height: 100vh;
+}
+.top .top-slider img {
+  height: 100vh;
 }
 
 /*-----------
@@ -88,4 +92,4 @@
 }
 .foot-menu .sns-icon {
   font-size: 20px;
-} /*# sourceMappingURL=top.css.map */
+}/*# sourceMappingURL=top.css.map */

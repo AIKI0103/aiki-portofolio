@@ -95,6 +95,9 @@ main {
   top: 0;
   left: 0;
 }
+.top .top-slider img {
+  height: 100vh;
+}
 
 /*-----------
 スライダー下部デザイン
