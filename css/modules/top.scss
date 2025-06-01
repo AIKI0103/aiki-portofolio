@@ -1,0 +1,93 @@
+.top {
+  font-family: "Domine", serif;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  /*-----------------
+  左メニュー
+  -----------------*/
+  .top-nav {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  h3 {
+    transform: rotate(90deg);
+    font-size: 0.8em;
+    padding-left: 30px;
+  }
+  h4 {
+    padding: 5px;
+  }
+  .menu {
+    position: relative;
+  }
+  .menu::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border: 1px solid #fff;
+    width: 0;
+    height: 100%;
+  }
+  ul {
+    padding-left: 10px;
+  }
+  .top-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    img {
+      height: 100vh;
+    }
+  }
+}
+/*-----------
+スライダー下部デザイン
+-------------*/
+.foot-menu {
+  background-color: #9dd8de;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .news-mov {
+    background: #8fb9bd;
+    border-radius: 5px;
+    padding: 0px 30px;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+  .contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+  }
+  .contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #fff;
+    width: 0;
+    height: 23px;
+  }
+  .sns-icon {
+    font-size: 20px;
+  }
+}
