@@ -55,7 +55,7 @@
   }
   li {
     padding: 5px;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(30px);
   }
   .menu {
@@ -413,11 +413,11 @@ SP/iPad用メディアクエリ
       transform: rotate(90deg);
       font-size: 0.8em;
       padding-left: 30px;
-      opacity: 0;
+      opacity: 1;
     }
     li {
       padding: 5px;
-      opacity: 0;
+      opacity: 1;
       transform: translateY(30px);
     }
     .menu {
@@ -752,35 +752,88 @@ footer
     position: absolute;
     top: 0;
     right: 0;
-    h3 {
-      margin-left: 300px;
+
+    // ✅ ハンバーガーメニュー表示
+    .hamburger {
+      display: block;
+      width: 30px;
+      height: 24px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      cursor: pointer;
+
+      span {
+        display: block;
+        height: 3px;
+        background: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 2px;
+      }
+
+      &.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      &.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
     }
 
-    .main-header .main-nav {
-      position: relative;
+    h3 {
+      margin-left: 0px;
+    }
+
+    // ✅ ナビゲーションメニューの開閉対応
+    .main-nav {
+      position: fixed;
       top: 0;
       right: 0;
-      width: 40%;
-      background: transparent;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(203, 241, 251, 0.95);
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 999;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      z-index: 10;
-    }
+      padding-top: 340px;
+      opacity: 1;
+      padding-bottom: 500px;
 
-    .menu ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0px;
-      padding: 0;
-      margin-left: 400px;
-      list-style: none;
+      &.open {
+        transform: translateX(-20px);
+      }
 
-      li a {
-        font-size: 0.8rem;
+      h3 {
         color: #fff;
-        text-decoration: none;
+        margin-bottom: 20px;
+        transform: none;
+        padding: 0;
+        font-size: 1.2rem;
+        opacity: 1;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li a {
+          font-size: 1.2rem;
+          color: #fff;
+          text-decoration: none;
+        }
       }
     }
 
